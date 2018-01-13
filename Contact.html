@@ -42,15 +42,14 @@ h1 {
 }
 .links {
 	float: right;
-	padding-top:30px;
+	padding-top: 30px;
 	color: #666666;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	
 }
-	.link {
-		color: #666666;
-		text-decoration:none;
-	}
+.link {
+	color: #666666;
+	text-decoration: none;
+}
 .main_section {
 	margin-left: auto;
 	margin-right: auto;
@@ -69,6 +68,11 @@ h1 {
 	display: inline-block;
 	height: inherit;
 }
+#form1 {
+	padding: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #666666;
+}
 #me {
 	float: left;
 	margin: 20px;
@@ -77,7 +81,6 @@ p {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	line-height: 2em;
 	padding: 20px;
-	
 }
 .sidebar {
 	width: 270px;
@@ -85,15 +88,33 @@ p {
 	margin-left: 40px;
 	padding: 20px 20px 30xp 24px;
 	float: left;
-	text-align:center;
+	text-align: center;
 }
 h2 {
 	padding-left: 0px;
 	color: #4aaaa5;
 }
-.icon {
-	width: 70px;
- height:70px:
+label {
+	line-height: 30px;
+}
+input {
+	width: 100%;
+}
+textarea {
+	width: 100%;
+	height: 250px;
+}
+#cta {
+	background-color: #4aaaa5;
+	width: 100px;
+	height: 40px;
+	color: #FFFFFF;
+	border: 0px;
+	font-size: 16px;
+}
+ .icon {
+ width: 70px;
+ height:70px;
 }
 .footer {
 	background-color: #666666;
@@ -101,16 +122,16 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	height:50px;
+	height: 50px;
 	clear: both;
 	bottom: 0;
-	 position:absolute;
+	position: absolute;
 }
 .pfooter {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	line-height: 1em;
 	padding: 10px;
-	text-align:center;
+	text-align: center;
 	color: #FFFFFF;
 </style>
 <body>
@@ -131,19 +152,34 @@ h2 {
   
   <!--content begin-->
   <div class="content">
-    <h1>About me</h1>
+    <h1>Contact</h1>
     <hr width="90%">
-    <img id="me" src="images/grad photo.jpg" width="224" height="226" alt=""/>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nostrum aliquid perferendis quibusdam officia minima quia sint illum maiores, ex consequatur, nisi, odit porro repellat earum, voluptate! Commodi, asperiores, tempora!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nostrum aliquid perferendis quibusdam officia minima quia sint illum maiores, ex consequatur, nisi, odit porro repellat earum, voluptate! Commodi, asperiores, tempora!</p>
+    <form id="form1" name="form1" method="post">
+      <label>Name</label>
+      <br>
+      <input type="text">
+      <br>
+      <label>Email</label>
+      <br>
+      <input type="email">
+      <br>
+      <label>Message</label>
+      <br>
+      <textarea></textarea>
+      <br>
+      <br>
+      <input id="cta" type="submit">
+    </form>
   </div>
   <!--content end--> 
   
   <!--sidebar begin-->
   <div class="sidebar">
     <h2>Connect with Me</h2>
-    <hr width=90%>
-    <img class="icon" src="images/if_social_network_web_media_-21_2878041.png"  alt=""/><img  class="icon" src="images/if_social_network_web_media_-32_2878030.png"  alt=""/><img class="icon" src="images/if_social_network_web_media_-33_2878029.png"  alt=""/> </div>
+    <hr width="90%">
+    <img class="icon" src="images/if_social_network_web_media_-21_2878041.png"  alt=""/>
+	  <img  class="icon" src="images/if_social_network_web_media_-32_2878030.png"  alt=""/>
+	  <img class="icon" src="images/if_social_network_web_media_-33_2878029.png"  alt=""/> </div>
   <!--sidebar end--> 
   
 </div>
